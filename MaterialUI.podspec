@@ -30,9 +30,10 @@ Pod::Spec.new do |spec|
   # spec.public_header_files = "CoreDeviceKit/**/*.h"
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Sources/**/*.{xib}"
+  spec.resources = "Sources/DropDown/resources/*.{xib}"
   spec.resource_bundle  = {
-    "MaterialUI" => "Sources/**/*.{storyboard,xib,xcassets,json,imageset,png}"
+    "MaterialUIAssets" => "Sources/**/*.{xcassets}",
+    # "MaterialUI" => "Sources/DropDown/resources/*.{xib}"
   }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
