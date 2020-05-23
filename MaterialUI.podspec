@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-  spec.name = "MatetialUI"
+  spec.name = "MaterialUI"
   spec.version = "1.0.0"
-  spec.summary = "MatetialUI is just a simple Material UI utility Module"
+  spec.summary = "MaterialUI is just a simple Material UI utility Module"
 
   spec.description = <<-DESC
   This module contains the tab bar controller with a circular button at center
