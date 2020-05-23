@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
     :git => "https://github.com/prashantLalShrestha/MaterialUI.git", :tag => spec.version.to_s
   }
   
-  spec.source_files = 'Sources/**/*.{swift}'
+  spec.source_files = 'Sources/**/*'
   # spec.exclude_files = "CoreDeviceKit/Exclude"
 
   spec.swift_version = "5.0"
@@ -30,10 +30,10 @@ Pod::Spec.new do |spec|
   # spec.public_header_files = "CoreDeviceKit/**/*.h"
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Sources/**/*.{xib}"
-  spec.resource_bundle  = {
-    "MaterialUIAssets" => "Sources/**/*.{xcassets,xib}"
-  }
+  spec.resources = "Sources/**/*.{xcassets,xib}"
+  # spec.resource_bundle  = {
+  #   "MaterialUIAssets" => "Sources/**/*.{xcassets,xib}"
+  # }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -42,7 +42,7 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "MaterialComponents/Snackbar"
