@@ -26,7 +26,7 @@
 		8F86DC272475616D00BE8F10 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC262475616D00BE8F10 /* TextFieldType.swift */; };
 		8F86DC292475618B00BE8F10 /* TF+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC282475618B00BE8F10 /* TF+Validation.swift */; };
 		8F86DC2F2475680A00BE8F10 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC2E2475680A00BE8F10 /* TextFieldStyle.swift */; };
-		8F86DC3324756AAE00BE8F10 /* MaterialUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F86DC3224756AAE00BE8F10 /* MaterialUIAssets.xcassets */; };
+		8F86DC3324756AAE00BE8F10 /* MaterialUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F86DC3224756AAE00BE8F10 /* MaterialUI.xcassets */; };
 		8F86DC36247571F500BE8F10 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC35247571F500BE8F10 /* UIImage+Ext.swift */; };
 		8F86DC3824758B8000BE8F10 /* TextFieldViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC3724758B8000BE8F10 /* TextFieldViewState.swift */; };
 		8FB9E9F12478C0440021ECF5 /* TF+FontConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E9F02478C0440021ECF5 /* TF+FontConfiguration.swift */; };
@@ -82,7 +82,7 @@
 		8F86DC262475616D00BE8F10 /* TextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
 		8F86DC282475618B00BE8F10 /* TF+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+Validation.swift"; sourceTree = "<group>"; };
 		8F86DC2E2475680A00BE8F10 /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
-		8F86DC3224756AAE00BE8F10 /* MaterialUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MaterialUIAssets.xcassets; sourceTree = "<group>"; };
+		8F86DC3224756AAE00BE8F10 /* MaterialUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MaterialUI.xcassets; sourceTree = "<group>"; };
 		8F86DC35247571F500BE8F10 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		8F86DC3724758B8000BE8F10 /* TextFieldViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewState.swift; sourceTree = "<group>"; };
 		8FB9E9F02478C0440021ECF5 /* TF+FontConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+FontConfiguration.swift"; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				8F86DC1B2475562600BE8F10 /* SnackBar.swift */,
 				8F86DC2224755C1000BE8F10 /* BaseDimensions.swift */,
 				8FD67A592477901900F4F904 /* DropDown */,
-				8F86DC3224756AAE00BE8F10 /* MaterialUIAssets.xcassets */,
+				8F86DC3224756AAE00BE8F10 /* MaterialUI.xcassets */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -382,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD67A792477A1E800F4F904 /* DropDownCell.xib in Resources */,
-				8F86DC3324756AAE00BE8F10 /* MaterialUIAssets.xcassets in Resources */,
+				8F86DC3324756AAE00BE8F10 /* MaterialUI.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

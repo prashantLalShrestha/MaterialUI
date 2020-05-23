@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   # spec.resources = "Sources/**/*.{xib}"
   spec.resource_bundle  = {
-    "MaterialUIAssets" => "Sources/**/*.{xcassets,xib}"
+    "MaterialUI" => "Sources/**/*.{storyboard,xib,xcassets,json,imageset,png}"
   }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"

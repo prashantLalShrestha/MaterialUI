@@ -12,7 +12,7 @@ extension UINib {
     convenience init?(podNibName: String) {
         let podBundle = Bundle(for: DropDown.self)
 //        self.init(nibName: "DropDownCell", bundle: podBundle)
-        guard let url = podBundle.url(forResource: "MaterialUIAssets", withExtension: "bundle") else {
+        guard let url = podBundle.url(forResource: "MaterialUI", withExtension: "bundle") else {
             return nil
         }
         self.init(nibName: "DropDownCell", bundle: Bundle(url: url))
