@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		31F9BE01973A38D8DF0A7CC9 /* Pods_MaterialUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CED68A7507A9D9C1343E6F /* Pods_MaterialUI.framework */; };
 		8F61A0672477F47B00D2CAE5 /* TextFieldTypeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61A0662477F47B00D2CAE5 /* TextFieldTypeDelegate.swift */; };
+		8F651A94247973BA008166E8 /* UINib+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F651A93247973BA008166E8 /* UINib+Ext.swift */; };
 		8F710074247845A50032DD8F /* FullScreenDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F710073247845A50032DD8F /* FullScreenDropDown.swift */; };
 		8F710076247846250032DD8F /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F710075247846250032DD8F /* DispatchQueue+Ext.swift */; };
 		8F86DC0224754FAF00BE8F10 /* MaterialUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F86DBF824754FAF00BE8F10 /* MaterialUI.framework */; };
@@ -61,6 +62,7 @@
 		601B4906173C268A53FD6289 /* Pods-MaterialUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialUI.debug.xcconfig"; path = "../../../../PodFile/Pods/Target Support Files/Pods-MaterialUI/Pods-MaterialUI.debug.xcconfig"; sourceTree = "<group>"; };
 		658764651503B1592D80AD94 /* Pods-MaterialUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialUI.release.xcconfig"; path = "../../../../PodFile/Pods/Target Support Files/Pods-MaterialUI/Pods-MaterialUI.release.xcconfig"; sourceTree = "<group>"; };
 		8F61A0662477F47B00D2CAE5 /* TextFieldTypeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTypeDelegate.swift; sourceTree = "<group>"; };
+		8F651A93247973BA008166E8 /* UINib+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Ext.swift"; sourceTree = "<group>"; };
 		8F710073247845A50032DD8F /* FullScreenDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenDropDown.swift; sourceTree = "<group>"; };
 		8F710075247846250032DD8F /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
 		8F86DBF824754FAF00BE8F10 /* MaterialUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				8F86DC35247571F500BE8F10 /* UIImage+Ext.swift */,
+				8F651A93247973BA008166E8 /* UINib+Ext.swift */,
 				8F710075247846250032DD8F /* DispatchQueue+Ext.swift */,
 				8FB9E9F22478D7D20021ECF5 /* UIFont+Ext.swift */,
 			);
@@ -451,6 +454,7 @@
 				8FB9E9F12478C0440021ECF5 /* TF+FontConfiguration.swift in Sources */,
 				8F86DC1F24755B7600BE8F10 /* TextView.swift in Sources */,
 				8FD67A732477A1E800F4F904 /* DropDown.swift in Sources */,
+				8F651A94247973BA008166E8 /* UINib+Ext.swift in Sources */,
 				8FB9E9F9247958C30021ECF5 /* DateDropDown.swift in Sources */,
 				8FC2C92D2478418000C7296B /* TF+ListConfiguration.swift in Sources */,
 				8F86DC2324755C1000BE8F10 /* BaseDimensions.swift in Sources */,

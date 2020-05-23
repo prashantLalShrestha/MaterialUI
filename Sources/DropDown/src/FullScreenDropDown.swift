@@ -221,7 +221,7 @@ public final class FullScreenDropDown: UIView {
      
      Changing the cell nib automatically reloads the drop down.
      */
-    public var cellNib = UINib(nibName: "DropDownCell", bundle: Bundle(for: DropDownCell.self)) {
+    public var cellNib = UINib(podNibName: "DropDownCell") {
         didSet {
             tableView.register(cellNib, forCellReuseIdentifier: DPDConstant.ReusableIdentifier.DropDownCell)
             templateCell = nil
