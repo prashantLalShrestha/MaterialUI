@@ -12,9 +12,9 @@ public extension TextField {
     @discardableResult func checkValidation(_ regex: String? = nil, emptyErrorText: String? = nil, invalidErrorText: String? = nil) -> Bool {
         
         var isValid = false
-        defer {
-            trailingViewState = isValid ? .success : .default
-        }
+//        defer {
+//            trailingViewState = isValid ? .success : .default
+//        }
         
         guard let text = text, !text.isEmpty else {
             self.controller?.setErrorText(emptyErrorText ?? "Required Field*", errorAccessibilityValue: nil)
