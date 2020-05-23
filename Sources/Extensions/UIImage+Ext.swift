@@ -11,11 +11,11 @@ import UIKit
 extension UIImage {
     convenience init?(podImageName: String) {
         let podBundle = Bundle(for: TextField.self)
-        self.init(named: podImageName, in: podBundle, compatibleWith: nil)
-//        guard let url = podBundle.url(forResource: "MaterialUIAssets", withExtension: "bundle") else {
-//            return nil
-//        }
-//        self.init(named: podImageName, in: Bundle(url: url), compatibleWith: nil)
+//        self.init(named: podImageName, in: podBundle, compatibleWith: nil)
+        guard let url = podBundle.url(forResource: "MaterialUIAssets", withExtension: "bundle") else {
+            return nil
+        }
+        self.init(named: podImageName, in: Bundle(url: url), compatibleWith: nil)
         
     }
     

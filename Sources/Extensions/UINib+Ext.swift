@@ -11,11 +11,11 @@ import UIKit
 extension UINib {
     convenience init?(podNibName: String) {
         let podBundle = Bundle(for: DropDown.self)
-        self.init(nibName: "DropDownCell", bundle: podBundle)
-//        guard let url = podBundle.url(forResource: "MaterialUIAssets", withExtension: "bundle") else {
-//            return nil
-//        }
-//        self.init(nibName: "DropDownCell", bundle: Bundle(url: url))
+//        self.init(nibName: "DropDownCell", bundle: podBundle)
+        guard let url = podBundle.url(forResource: "MaterialUIAssets", withExtension: "bundle") else {
+            return nil
+        }
+        self.init(nibName: "DropDownCell", bundle: Bundle(url: url))
         
     }
 }
