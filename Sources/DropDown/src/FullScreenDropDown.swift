@@ -238,7 +238,6 @@ public final class FullScreenDropDown: UIView {
     */
     public var dataSource = [String]() {
         didSet {
-            searchBar.text = nil
             deselectRows(at: selectedRowIndices)
             filteredDataSource = dataSource
         }
