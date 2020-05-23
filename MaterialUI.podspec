@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
     :git => "https://github.com/prashantLalShrestha/MaterialUI.git", :tag => spec.version.to_s
   }
   
-  spec.source_files = 'Sources/**/*'
+  spec.source_files = 'Sources/**/*.{swift}'
   # spec.exclude_files = "CoreDeviceKit/Exclude"
 
   spec.swift_version = "5.0"
@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   # spec.resources = "Sources/**/*.{xib}"
   spec.resource_bundle  = {
-    "MaterialUIAssets" => "Sources/**/*.{xcassets, xib}"
+    "MaterialUIAssets" => "Sources/**/*.{xcassets,xib}"
   }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
