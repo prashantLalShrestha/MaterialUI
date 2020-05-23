@@ -9,7 +9,6 @@ target 'MaterialUI' do
   pod 'MaterialComponents/Snackbar'
   pod 'MaterialComponents/Tabs'
   pod 'MaterialComponents/TextFields'
-  pod 'DropDown'  # https://github.com/AssistoLab/DropDown
 
   target 'MaterialUITests' do
     # Pods for testing
