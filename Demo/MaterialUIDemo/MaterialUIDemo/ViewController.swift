@@ -32,10 +32,9 @@ class ViewController: UIViewController {
         view.delegate = self
         return view
     }()
-    lazy var textField4: TextField = {
-        let view = TextField()
+    lazy var textField4: DropDownTextField = {
+        let view = DropDownTextField()
         view.placeholder = "DropDown TextField"
-        view.type = .listDropDown
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             view.dataSource = [view.placeholder!, "DataSource1"]
         }
@@ -50,10 +49,9 @@ class ViewController: UIViewController {
         }
         return view
     }()
-    lazy var textField5: TextField = {
-        let view = TextField()
+    lazy var textField5: ListTextField = {
+        let view = ListTextField()
         view.placeholder = "List TextField"
-        view.type = .listPicker
         view.listFetchAction = { _ in
             self.getTextField5DataSource()
         }
@@ -62,19 +60,18 @@ class ViewController: UIViewController {
         }
         return view
     }()
-    lazy var textField6: TextField = {
-        let view = TextField()
+    lazy var textField6: ListTextField = {
+        let view = ListTextField()
         view.placeholder = "List TextField No Reload"
-        view.type = .listPicker
         view.selectionAction = { index, string in
             view.text = string
         }
         return view
     }()
-    lazy var textField7: TextField = {
-        let view = TextField()
+    lazy var textField7: SearchTextField = {
+        let view = SearchTextField()
         view.placeholder = "Search TextField Default"
-        view.type = .searchDefault
+        view.searchType = .default
         view.listFetchAction = { _ in
             self.getTextField7DataSource()
         }
@@ -83,10 +80,10 @@ class ViewController: UIViewController {
         }
         return view
     }()
-    lazy var textField8: TextField = {
-        let view = TextField()
+    lazy var textField8: SearchTextField = {
+        let view = SearchTextField()
         view.placeholder = "Search TextField Instant"
-        view.type = .searchInstant
+        view.searchType = .instant
         view.listFetchAction = { _ in
             self.getTextField8DataSource()
         }
@@ -95,10 +92,9 @@ class ViewController: UIViewController {
         }
         return view
     }()
-    lazy var textField9: TextField = {
-        let view = TextField()
+    lazy var textField9: DateTextField = {
+        let view = DateTextField()
         view.placeholder = "Date TextField"
-        view.type = .date
         return view
     }()
 

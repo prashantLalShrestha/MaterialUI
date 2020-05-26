@@ -38,16 +38,4 @@ extension TextField {
         }
     }
     
-    func pickerStateConfiguration(state: TrailingViewState) {
-        if (type == .listPicker || type == .searchDefault || type == .searchInstant) && fullScreenDropDown.isDisplayed == false {
-            switch state {
-            case .processing:
-                fullScreenDropDown.startLoading()
-            case .default:
-                fullScreenDropDown.stopLoading()
-            case .success:
-                fullScreenDropDown.stopLoading()
-            }
-        }
-    }
 }

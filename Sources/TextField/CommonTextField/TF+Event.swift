@@ -16,13 +16,13 @@ extension TextField {
         self.addTarget(self, action: #selector(editingDidEnd), for: .editingDidEnd)
     }
     
-    @objc private func editingDidBegin() {
+    @objc func editingDidBegin() {
         if trailingViewState == .success {
             trailingViewState = .default
         }
     }
     
-    @objc private func editingDidEnd() {
+    @objc func editingDidEnd() {
         secureTextEndEditing()
         trailingViewStateConfiguration(state: trailingViewState)
     }

@@ -24,8 +24,13 @@ end
 target 'MaterialUIDemo' do
   project 'Demo/MaterialUIDemo/MaterialUIDemo'
   
-  pod 'MaterialUI', :git => "https://github.com/prashantLalShrestha/MaterialUI.git"
+#  pod 'MaterialUI', :git => "https://github.com/prashantLalShrestha/MaterialUI.git"
   pod 'SnapKit'
+  
+  
+  pod 'MaterialComponents/Snackbar'
+  pod 'MaterialComponents/Tabs'
+  pod 'MaterialComponents/TextFields'
   
 end
 

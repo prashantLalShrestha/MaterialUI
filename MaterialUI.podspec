@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "MaterialUI"
-  spec.version = "1.0.2"
+  spec.version = "2.0.0"
   spec.summary = "MaterialUI is just a simple Material UI utility Module"
 
   spec.description = <<-DESC

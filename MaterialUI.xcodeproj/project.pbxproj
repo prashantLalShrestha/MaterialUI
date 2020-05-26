@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		31F9BE01973A38D8DF0A7CC9 /* Pods_MaterialUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CED68A7507A9D9C1343E6F /* Pods_MaterialUI.framework */; };
 		78D3FD0C4687D24E11F2903E /* Pods_MaterialUI_MaterialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D68EDFD86F0057DAAA0C1D /* Pods_MaterialUI_MaterialUITests.framework */; };
-		8F61A0672477F47B00D2CAE5 /* TextFieldTypeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61A0662477F47B00D2CAE5 /* TextFieldTypeDelegate.swift */; };
 		8F651A94247973BA008166E8 /* UINib+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F651A93247973BA008166E8 /* UINib+Ext.swift */; };
 		8F710074247845A50032DD8F /* FullScreenDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F710073247845A50032DD8F /* FullScreenDropDown.swift */; };
 		8F710076247846250032DD8F /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F710075247846250032DD8F /* DispatchQueue+Ext.swift */; };
@@ -24,22 +23,16 @@
 		8F86DC2124755B8800BE8F10 /* OutlinedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC2024755B8800BE8F10 /* OutlinedTextView.swift */; };
 		8F86DC2324755C1000BE8F10 /* BaseDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC2224755C1000BE8F10 /* BaseDimensions.swift */; };
 		8F86DC2524755D2900BE8F10 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC2424755D2900BE8F10 /* TextField.swift */; };
-		8F86DC272475616D00BE8F10 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC262475616D00BE8F10 /* TextFieldType.swift */; };
 		8F86DC292475618B00BE8F10 /* TF+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC282475618B00BE8F10 /* TF+Validation.swift */; };
 		8F86DC2F2475680A00BE8F10 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC2E2475680A00BE8F10 /* TextFieldStyle.swift */; };
 		8F86DC3324756AAE00BE8F10 /* MaterialUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F86DC3224756AAE00BE8F10 /* MaterialUI.xcassets */; };
 		8F86DC36247571F500BE8F10 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC35247571F500BE8F10 /* UIImage+Ext.swift */; };
 		8F86DC3824758B8000BE8F10 /* TextFieldViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86DC3724758B8000BE8F10 /* TextFieldViewState.swift */; };
-		8FB9E9F12478C0440021ECF5 /* TF+FontConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E9F02478C0440021ECF5 /* TF+FontConfiguration.swift */; };
 		8FB9E9F32478D7D20021ECF5 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E9F22478D7D20021ECF5 /* UIFont+Ext.swift */; };
-		8FB9E9F52478D8BB0021ECF5 /* TF+PlaceholderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E9F42478D8BB0021ECF5 /* TF+PlaceholderConfiguration.swift */; };
-		8FB9E9F7247907EA0021ECF5 /* TF+ListReload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E9F6247907EA0021ECF5 /* TF+ListReload.swift */; };
 		8FB9E9F9247958C30021ECF5 /* DateDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E9F8247958C30021ECF5 /* DateDropDown.swift */; };
-		8FB9E9FB247964400021ECF5 /* TF+DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E9FA247964400021ECF5 /* TF+DatePicker.swift */; };
 		8FC2C92724783FD300C7296B /* TF+SecureTextConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C92624783FD300C7296B /* TF+SecureTextConfiguration.swift */; };
 		8FC2C9292478407F00C7296B /* TF+ActionSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C9282478407F00C7296B /* TF+ActionSetup.swift */; };
 		8FC2C92B247840F200C7296B /* TF+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C92A247840F200C7296B /* TF+Event.swift */; };
-		8FC2C92D2478418000C7296B /* TF+ListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C92C2478418000C7296B /* TF+ListConfiguration.swift */; };
 		8FD67A732477A1E800F4F904 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD67A6A2477A1E800F4F904 /* DropDown.swift */; };
 		8FD67A742477A1E800F4F904 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD67A6B2477A1E800F4F904 /* DropDownCell.swift */; };
 		8FD67A752477A1E800F4F904 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD67A6C2477A1E800F4F904 /* DropDown+Appearance.swift */; };
@@ -47,6 +40,14 @@
 		8FD67A772477A1E800F4F904 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD67A6F2477A1E800F4F904 /* DPDConstants.swift */; };
 		8FD67A782477A1E800F4F904 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD67A702477A1E800F4F904 /* DPDUIView+Extension.swift */; };
 		8FD67A792477A1E800F4F904 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD67A722477A1E800F4F904 /* DropDownCell.xib */; };
+		8FDA6A93247D8222000E765C /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6A92247D8222000E765C /* DropDownTextField.swift */; };
+		8FDA6A95247D83E7000E765C /* DropDownTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6A94247D83E7000E765C /* DropDownTextFieldDelegate.swift */; };
+		8FDA6A9A247D8ADF000E765C /* ListTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6A99247D8ADF000E765C /* ListTextField.swift */; };
+		8FDA6A9C247D8E1E000E765C /* ListTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6A9B247D8E1E000E765C /* ListTextFieldDelegate.swift */; };
+		8FDA6A9F247D8FC4000E765C /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6A9E247D8FC4000E765C /* SearchTextField.swift */; };
+		8FDA6AA1247D8FEC000E765C /* SearchTF+SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6AA0247D8FEC000E765C /* SearchTF+SearchType.swift */; };
+		8FDA6AA4247D962B000E765C /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6AA3247D962B000E765C /* DateTextField.swift */; };
+		8FDA6AA6247D9639000E765C /* DateTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA6AA5247D9639000E765C /* DateTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,6 @@
 		658764651503B1592D80AD94 /* Pods-MaterialUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialUI.release.xcconfig"; path = "Target Support Files/Pods-MaterialUI/Pods-MaterialUI.release.xcconfig"; sourceTree = "<group>"; };
 		72D68EDFD86F0057DAAA0C1D /* Pods_MaterialUI_MaterialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialUI_MaterialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		818B937565C06B872FF49736 /* Pods-MaterialUI-MaterialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialUI-MaterialUITests.release.xcconfig"; path = "Target Support Files/Pods-MaterialUI-MaterialUITests/Pods-MaterialUI-MaterialUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8F61A0662477F47B00D2CAE5 /* TextFieldTypeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTypeDelegate.swift; sourceTree = "<group>"; };
 		8F651A93247973BA008166E8 /* UINib+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Ext.swift"; sourceTree = "<group>"; };
 		8F710073247845A50032DD8F /* FullScreenDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenDropDown.swift; sourceTree = "<group>"; };
 		8F710075247846250032DD8F /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
@@ -83,22 +83,16 @@
 		8F86DC2024755B8800BE8F10 /* OutlinedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedTextView.swift; sourceTree = "<group>"; };
 		8F86DC2224755C1000BE8F10 /* BaseDimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDimensions.swift; sourceTree = "<group>"; };
 		8F86DC2424755D2900BE8F10 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		8F86DC262475616D00BE8F10 /* TextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
 		8F86DC282475618B00BE8F10 /* TF+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+Validation.swift"; sourceTree = "<group>"; };
 		8F86DC2E2475680A00BE8F10 /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
 		8F86DC3224756AAE00BE8F10 /* MaterialUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MaterialUI.xcassets; sourceTree = "<group>"; };
 		8F86DC35247571F500BE8F10 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		8F86DC3724758B8000BE8F10 /* TextFieldViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewState.swift; sourceTree = "<group>"; };
-		8FB9E9F02478C0440021ECF5 /* TF+FontConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+FontConfiguration.swift"; sourceTree = "<group>"; };
 		8FB9E9F22478D7D20021ECF5 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
-		8FB9E9F42478D8BB0021ECF5 /* TF+PlaceholderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+PlaceholderConfiguration.swift"; sourceTree = "<group>"; };
-		8FB9E9F6247907EA0021ECF5 /* TF+ListReload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+ListReload.swift"; sourceTree = "<group>"; };
 		8FB9E9F8247958C30021ECF5 /* DateDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDropDown.swift; sourceTree = "<group>"; };
-		8FB9E9FA247964400021ECF5 /* TF+DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+DatePicker.swift"; sourceTree = "<group>"; };
 		8FC2C92624783FD300C7296B /* TF+SecureTextConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+SecureTextConfiguration.swift"; sourceTree = "<group>"; };
 		8FC2C9282478407F00C7296B /* TF+ActionSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+ActionSetup.swift"; sourceTree = "<group>"; };
 		8FC2C92A247840F200C7296B /* TF+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+Event.swift"; sourceTree = "<group>"; };
-		8FC2C92C2478418000C7296B /* TF+ListConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TF+ListConfiguration.swift"; sourceTree = "<group>"; };
 		8FD67A6A2477A1E800F4F904 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		8FD67A6B2477A1E800F4F904 /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
 		8FD67A6C2477A1E800F4F904 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
@@ -106,6 +100,14 @@
 		8FD67A6F2477A1E800F4F904 /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
 		8FD67A702477A1E800F4F904 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		8FD67A722477A1E800F4F904 /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		8FDA6A92247D8222000E765C /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
+		8FDA6A94247D83E7000E765C /* DropDownTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextFieldDelegate.swift; sourceTree = "<group>"; };
+		8FDA6A99247D8ADF000E765C /* ListTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTextField.swift; sourceTree = "<group>"; };
+		8FDA6A9B247D8E1E000E765C /* ListTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTextFieldDelegate.swift; sourceTree = "<group>"; };
+		8FDA6A9E247D8FC4000E765C /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		8FDA6AA0247D8FEC000E765C /* SearchTF+SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchTF+SearchType.swift"; sourceTree = "<group>"; };
+		8FDA6AA3247D962B000E765C /* DateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
+		8FDA6AA5247D9639000E765C /* DateTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextFieldDelegate.swift; sourceTree = "<group>"; };
 		A2CED68A7507A9D9C1343E6F /* Pods_MaterialUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,20 +199,11 @@
 		8F86DC1D24755B5300BE8F10 /* TextField */ = {
 			isa = PBXGroup;
 			children = (
-				8F86DC2424755D2900BE8F10 /* TextField.swift */,
-				8FC2C92A247840F200C7296B /* TF+Event.swift */,
-				8FC2C9282478407F00C7296B /* TF+ActionSetup.swift */,
-				8F86DC262475616D00BE8F10 /* TextFieldType.swift */,
-				8FC2C92624783FD300C7296B /* TF+SecureTextConfiguration.swift */,
-				8FB9E9FA247964400021ECF5 /* TF+DatePicker.swift */,
-				8FC2C92C2478418000C7296B /* TF+ListConfiguration.swift */,
-				8F86DC2E2475680A00BE8F10 /* TextFieldStyle.swift */,
-				8F86DC3724758B8000BE8F10 /* TextFieldViewState.swift */,
-				8F86DC282475618B00BE8F10 /* TF+Validation.swift */,
-				8F61A0662477F47B00D2CAE5 /* TextFieldTypeDelegate.swift */,
-				8FB9E9F02478C0440021ECF5 /* TF+FontConfiguration.swift */,
-				8FB9E9F42478D8BB0021ECF5 /* TF+PlaceholderConfiguration.swift */,
-				8FB9E9F6247907EA0021ECF5 /* TF+ListReload.swift */,
+				8FDA6AA2247D961C000E765C /* DateTextField */,
+				8FDA6A9D247D8FB2000E765C /* SearchTextField */,
+				8FDA6A98247D8AC0000E765C /* ListTextField */,
+				8FDA6A91247D8209000E765C /* DropDownTextField */,
+				8FDA6A90247D81DF000E765C /* CommonTextField */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -273,6 +266,56 @@
 				8FD67A722477A1E800F4F904 /* DropDownCell.xib */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		8FDA6A90247D81DF000E765C /* CommonTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8F86DC2424755D2900BE8F10 /* TextField.swift */,
+				8FC2C92A247840F200C7296B /* TF+Event.swift */,
+				8FC2C9282478407F00C7296B /* TF+ActionSetup.swift */,
+				8F86DC3724758B8000BE8F10 /* TextFieldViewState.swift */,
+				8F86DC282475618B00BE8F10 /* TF+Validation.swift */,
+				8F86DC2E2475680A00BE8F10 /* TextFieldStyle.swift */,
+				8FC2C92624783FD300C7296B /* TF+SecureTextConfiguration.swift */,
+			);
+			path = CommonTextField;
+			sourceTree = "<group>";
+		};
+		8FDA6A91247D8209000E765C /* DropDownTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA6A92247D8222000E765C /* DropDownTextField.swift */,
+				8FDA6A94247D83E7000E765C /* DropDownTextFieldDelegate.swift */,
+			);
+			path = DropDownTextField;
+			sourceTree = "<group>";
+		};
+		8FDA6A98247D8AC0000E765C /* ListTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA6A99247D8ADF000E765C /* ListTextField.swift */,
+				8FDA6A9B247D8E1E000E765C /* ListTextFieldDelegate.swift */,
+			);
+			path = ListTextField;
+			sourceTree = "<group>";
+		};
+		8FDA6A9D247D8FB2000E765C /* SearchTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA6A9E247D8FC4000E765C /* SearchTextField.swift */,
+				8FDA6AA0247D8FEC000E765C /* SearchTF+SearchType.swift */,
+			);
+			path = SearchTextField;
+			sourceTree = "<group>";
+		};
+		8FDA6AA2247D961C000E765C /* DateTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA6AA3247D962B000E765C /* DateTextField.swift */,
+				8FDA6AA5247D9639000E765C /* DateTextFieldDelegate.swift */,
+			);
+			path = DateTextField;
 			sourceTree = "<group>";
 		};
 		A16F8A38F022CCFAF0BBE595 /* Frameworks */ = {
@@ -474,38 +517,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDA6A9A247D8ADF000E765C /* ListTextField.swift in Sources */,
 				8F86DC292475618B00BE8F10 /* TF+Validation.swift in Sources */,
 				8F710074247845A50032DD8F /* FullScreenDropDown.swift in Sources */,
 				8F710076247846250032DD8F /* DispatchQueue+Ext.swift in Sources */,
 				8F86DC1A247555F100BE8F10 /* PeakIndicatorTemplate.swift in Sources */,
 				8FD67A782477A1E800F4F904 /* DPDUIView+Extension.swift in Sources */,
 				8F86DC162475553E00BE8F10 /* TopTapView.swift in Sources */,
-				8F61A0672477F47B00D2CAE5 /* TextFieldTypeDelegate.swift in Sources */,
+				8FDA6AA1247D8FEC000E765C /* SearchTF+SearchType.swift in Sources */,
 				8F86DC1C2475562600BE8F10 /* SnackBar.swift in Sources */,
 				8F86DC2524755D2900BE8F10 /* TextField.swift in Sources */,
-				8F86DC272475616D00BE8F10 /* TextFieldType.swift in Sources */,
 				8FD67A772477A1E800F4F904 /* DPDConstants.swift in Sources */,
+				8FDA6A9F247D8FC4000E765C /* SearchTextField.swift in Sources */,
+				8FDA6AA6247D9639000E765C /* DateTextFieldDelegate.swift in Sources */,
 				8FC2C92B247840F200C7296B /* TF+Event.swift in Sources */,
+				8FDA6A93247D8222000E765C /* DropDownTextField.swift in Sources */,
 				8FD67A762477A1E800F4F904 /* DPDKeyboardListener.swift in Sources */,
 				8F86DC2124755B8800BE8F10 /* OutlinedTextView.swift in Sources */,
 				8F86DC3824758B8000BE8F10 /* TextFieldViewState.swift in Sources */,
-				8FB9E9FB247964400021ECF5 /* TF+DatePicker.swift in Sources */,
 				8F86DC2F2475680A00BE8F10 /* TextFieldStyle.swift in Sources */,
-				8FB9E9F7247907EA0021ECF5 /* TF+ListReload.swift in Sources */,
+				8FDA6A95247D83E7000E765C /* DropDownTextFieldDelegate.swift in Sources */,
 				8FC2C92724783FD300C7296B /* TF+SecureTextConfiguration.swift in Sources */,
 				8F86DC18247555CE00BE8F10 /* MinimalIndicatorTemplate.swift in Sources */,
 				8FD67A742477A1E800F4F904 /* DropDownCell.swift in Sources */,
+				8FDA6A9C247D8E1E000E765C /* ListTextFieldDelegate.swift in Sources */,
 				8F86DC36247571F500BE8F10 /* UIImage+Ext.swift in Sources */,
 				8FC2C9292478407F00C7296B /* TF+ActionSetup.swift in Sources */,
 				8FD67A752477A1E800F4F904 /* DropDown+Appearance.swift in Sources */,
 				8FB9E9F32478D7D20021ECF5 /* UIFont+Ext.swift in Sources */,
-				8FB9E9F52478D8BB0021ECF5 /* TF+PlaceholderConfiguration.swift in Sources */,
-				8FB9E9F12478C0440021ECF5 /* TF+FontConfiguration.swift in Sources */,
 				8F86DC1F24755B7600BE8F10 /* TextView.swift in Sources */,
 				8FD67A732477A1E800F4F904 /* DropDown.swift in Sources */,
 				8F651A94247973BA008166E8 /* UINib+Ext.swift in Sources */,
 				8FB9E9F9247958C30021ECF5 /* DateDropDown.swift in Sources */,
-				8FC2C92D2478418000C7296B /* TF+ListConfiguration.swift in Sources */,
+				8FDA6AA4247D962B000E765C /* DateTextField.swift in Sources */,
 				8F86DC2324755C1000BE8F10 /* BaseDimensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
