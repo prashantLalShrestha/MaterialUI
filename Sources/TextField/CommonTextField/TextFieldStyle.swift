@@ -10,7 +10,7 @@ import UIKit
 import MaterialComponents.MaterialTextFields
 
 public extension TextField {
-    public enum TextFieldStyle {
+    enum TextFieldStyle {
         case underlined
         case outlined
         case filled

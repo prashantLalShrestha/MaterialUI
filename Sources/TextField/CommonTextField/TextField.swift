@@ -80,8 +80,6 @@ open class TextField: MDCTextField {
     open func makeUI() {
         self.layer.masksToBounds = true
         
-        self.style = .filled
-        
         self.placeholderLabel.font = font
         
         self.setEventTargets()
