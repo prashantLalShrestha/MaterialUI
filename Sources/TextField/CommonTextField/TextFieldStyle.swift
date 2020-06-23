@@ -46,10 +46,10 @@ extension TextField {
         if self.subviews.contains(commonBorderView) == false, let underline = self.underline {
             self.insertSubview(commonBorderView, at: 0)
             commonBorderView.translatesAutoresizingMaskIntoConstraints = false
-            commonBorderView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8.0).isActive = true
+            commonBorderView.topAnchor.constraint(equalTo: self.topAnchor, constant: 6.0).isActive = true
             commonBorderView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0.0).isActive = true
             commonBorderView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0.0).isActive = true
-            commonBorderView.bottomAnchor.constraint(equalTo: underline.bottomAnchor, constant: -8.0).isActive = true
+            commonBorderView.bottomAnchor.constraint(equalTo: underline.bottomAnchor, constant: -6.0).isActive = true
             
             commonBorderView.layer.borderColor = controller?.normalColor.cgColor
             commonBorderView.layer.borderWidth = 1.0

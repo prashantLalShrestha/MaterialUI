@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         view.autocorrectionType = .no
         view.placeholder = "Placeholder"
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.heightAnchor.constraint(equalToConstant: 67).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        view.setHelperText("Helper", helperAccessibilityValue: nil)
         return view
     }()
     lazy var textField2: TextField = {
@@ -40,6 +41,9 @@ class ViewController: UIViewController {
         let subViews = [textField, textField2]
         let view = UIStackView(arrangedSubviews: subViews)
         view.axis = .vertical
+        view.spacing = 0.0
+        view.alignment = .fill
+        view.distribution = .fill
         return view
     }()
     
