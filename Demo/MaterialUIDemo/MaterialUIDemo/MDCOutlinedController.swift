@@ -10,17 +10,17 @@ import UIKit
 import MaterialComponents
 
 fileprivate let MDCTextInputOutlinedTextFieldFullPadding: CGFloat = 16
-fileprivate let MDCTextInputOutlinedTextFieldNormalPlaceholderPadding: CGFloat = 20
+fileprivate let MDCTextInputOutlinedTextFieldNormalPlaceholderPadding: CGFloat = 8
 fileprivate let MDCTextInputOutlinedTextFieldThreeQuartersPadding: CGFloat = 12
 
-class MDCOutlinedController: MDCTextInputControllerBase {
+class MDCOutlinedController: MDCTextInputControllerOutlined {
     
     required init(textInput input: (UIView & MDCTextInput)?) {
         super.init(textInput: input)
         
-        input?.textInsetsMode = .always
-        
-        self.isFloatingEnabled = false
+//        input?.textInsetsMode = .always
+//        
+//        self.isFloatingEnabled = false
     }
     
     

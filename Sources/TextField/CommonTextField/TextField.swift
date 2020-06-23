@@ -65,6 +65,19 @@ open class TextField: MDCTextField {
     
     var disabledView: UIView?
     
+    lazy var commonBorderView: UIView = {
+        let view = UIView()
+        view.isUserInteractionEnabled = false
+        return view
+    }()
+    
+    open override var isEnabled: Bool {
+        didSet {
+            if style == .common {
+                commonBorderView.layer.borderColor = isEnabled ? controller?.normalColor.cgColor : controller?.disabledColor.cgColor
+            }
+        }
+    }
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -83,6 +96,19 @@ open class TextField: MDCTextField {
         self.placeholderLabel.font = font
         
         self.setEventTargets()
+    }
+    
+    open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        if style == .common {
+            return commonBorderView.bounds.contains(point)
+        } else {
+            return super.point(inside: point, with: event)
+        }
+    }
+    
+    deinit {
+        self.removeTarget(self, action: #selector(commonBorderViewEditing), for: .editingDidBegin)
+        self.removeTarget(self, action: #selector(commonBorderViewEditingEnd), for: .editingDidEnd)
     }
 }
 

@@ -17,22 +17,40 @@ public extension TextField {
 //        }
         
         guard let text = text, !text.isEmpty else {
-            self.controller?.setErrorText(emptyErrorText ?? "Required Field*", errorAccessibilityValue: nil)
+            self.setErrorText(emptyErrorText ?? "Required Field*", errorAccessibilityValue: nil)
             isValid = false
             return isValid
         }
         
         guard let regex = regex else {
-            self.controller?.setErrorText(nil, errorAccessibilityValue: nil)
+            self.setErrorText(nil, errorAccessibilityValue: nil)
             isValid = true
             return isValid
         }
         
         isValid = text.isValid(regex: regex)
         let invalidErrorText = invalidErrorText ?? "Invalid Input"
-        self.controller?.setErrorText(isValid ? nil : invalidErrorText, errorAccessibilityValue: nil)
+        self.setErrorText(isValid ? nil : invalidErrorText, errorAccessibilityValue: nil)
         
         return isValid
+    }
+    
+    func setErrorText(_ errorText: String?, errorAccessibilityValue: String?) {
+        if style == .common {
+            if errorText?.isEmpty == false {
+                commonBorderView.layer.borderColor = controller?.errorColor.cgColor
+            } else {
+                commonBorderView.layer.borderColor = isEditing ? controller?.activeColor.cgColor : controller?.normalColor.cgColor
+            }
+        }
+        controller?.setErrorText(errorText, errorAccessibilityValue: errorAccessibilityValue)
+    }
+    
+    func setHelperText(_ helperText: String?, helperAccessibilityValue: String?) {
+        if style == .common {
+            commonBorderView.layer.borderColor = isEditing ? controller?.activeColor.cgColor : controller?.normalColor.cgColor
+        }
+        controller?.setHelperText(helperText, helperAccessibilityLabel: helperAccessibilityValue)
     }
 }
 
