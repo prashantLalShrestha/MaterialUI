@@ -10,7 +10,7 @@ import UIKit
 import MaterialComponents.MaterialTextFields
 
 public extension TextField {
-    enum TrailingViewState {
+    public enum TrailingViewState {
         case processing
         case success
         case `default`
