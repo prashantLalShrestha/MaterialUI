@@ -57,13 +57,13 @@ extension TextField {
             
             leadingUnderlineLabel.translatesAutoresizingMaskIntoConstraints = false
             leadingUnderlineLabel.topAnchor.constraint(equalTo: commonBorderView.bottomAnchor, constant: 2.0).isActive = true
-            leadingUnderlineLabel.leftAnchor.constraint(equalTo: commonBorderView.leftAnchor, constant: 8.0).isActive = true
-            leadingUnderlineLabel.rightAnchor.constraint(equalTo: commonBorderView.rightAnchor, constant: 8.0).isActive = true
+            leadingUnderlineLabel.leftAnchor.constraint(equalTo: commonBorderView.leftAnchor, constant: 0.0).isActive = true
+            leadingUnderlineLabel.rightAnchor.constraint(equalTo: commonBorderView.rightAnchor, constant: 0.0).isActive = true
             
             trailingUnderlineLabel.translatesAutoresizingMaskIntoConstraints = false
             trailingUnderlineLabel.topAnchor.constraint(equalTo: commonBorderView.bottomAnchor, constant: 2.0).isActive = true
-            trailingUnderlineLabel.leftAnchor.constraint(equalTo: commonBorderView.leftAnchor, constant: 8.0).isActive = true
-            trailingUnderlineLabel.rightAnchor.constraint(equalTo: commonBorderView.rightAnchor, constant: 8.0).isActive = true
+            trailingUnderlineLabel.leftAnchor.constraint(equalTo: commonBorderView.leftAnchor, constant: 0.0).isActive = true
+            trailingUnderlineLabel.rightAnchor.constraint(equalTo: commonBorderView.rightAnchor, constant: 0.0).isActive = true
             
             
             self.layoutIfNeeded()

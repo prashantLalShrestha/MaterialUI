@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         view.autocorrectionType = .no
         view.placeholder = "Placeholder"
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.heightAnchor.constraint(equalToConstant: 74).isActive = true
-//        view.setHelperText("Helper", helperAccessibilityValue: nil)
+//        view.heightAnchor.constraint(equalToConstant: 78).isActive = true
+        view.setHelperText("Helper\n Helper", helperAccessibilityValue: nil)
         return view
     }()
     lazy var textField2: TextField = {
