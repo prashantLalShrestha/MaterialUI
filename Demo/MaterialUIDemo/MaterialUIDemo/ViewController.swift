@@ -21,9 +21,11 @@ class ViewController: UIViewController {
         view.keyboardType = .default
         view.autocorrectionType = .no
         view.placeholder = "Placeholder"
+        view.controller?.inlinePlaceholderFont = UIFont.systemFont(ofSize: 12)
         view.translatesAutoresizingMaskIntoConstraints = false
 //        view.heightAnchor.constraint(equalToConstant: 78).isActive = true
-        view.setHelperText("Helper\n Helper", helperAccessibilityValue: nil)
+        view.setHelperText("HelperHelperHelperHelperHelperHelperHelperHelperHelperHelperHelperHelperHelperHelper", helperAccessibilityValue: nil)
+        view.controller?.leadingUnderlineLabelFont = UIFont.systemFont(ofSize: 12)
         return view
     }()
     lazy var textField2: TextField = {
