@@ -262,7 +262,7 @@ open class DatePickerDialog: UIView {
         let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 30, width: 0, height: 0))
         datePicker.setValue(self.textColor, forKeyPath: "textColor")
         datePicker.autoresizingMask = .flexibleRightMargin
-        datePicker.frame.size.width = 300
+        datePicker.frame.size.width = 280
         datePicker.frame.size.height = 216
         return datePicker
     }
