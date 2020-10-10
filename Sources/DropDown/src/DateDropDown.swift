@@ -201,7 +201,7 @@ open class DatePickerDialog: UIView {
     /// Creates the container view here: create the dialog, then add the custom content and buttons
     private func createContainerView() -> UIView {
         let screenSize = UIScreen.main.bounds.size
-        let dialogSize = CGSize(width: 300, height: 230 + kDefaultButtonHeight + kDefaultButtonSpacerHeight)
+        let dialogSize = CGSize(width: 320, height: 230 + kDefaultButtonHeight + kDefaultButtonSpacerHeight)
 
         // For the black background
         self.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height)
@@ -262,7 +262,7 @@ open class DatePickerDialog: UIView {
         let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 30, width: 0, height: 0))
         datePicker.setValue(self.textColor, forKeyPath: "textColor")
         datePicker.autoresizingMask = .flexibleRightMargin
-        datePicker.frame.size.width = 280
+        datePicker.frame.size.width = 300
         datePicker.frame.size.height = 216
         return datePicker
     }
