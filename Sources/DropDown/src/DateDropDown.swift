@@ -145,11 +145,7 @@ open class DatePickerDialog: UIView {
         self.defaultDate = defaultDate
         self.datePicker.datePickerMode = self.datePickerMode ?? UIDatePicker.Mode.date
         if #available(iOS 13.4, *) {
-            if #available(iOS 14.0, *) {
-                self.datePicker.preferredDatePickerStyle = UIDatePickerStyle.inline
-            } else {
-                self.datePicker.preferredDatePickerStyle = UIDatePickerStyle.wheels
-            }
+            self.datePicker.preferredDatePickerStyle = UIDatePickerStyle.wheels
         }
         self.datePicker.date = self.defaultDate ?? Date()
         self.datePicker.maximumDate = maximumDate
