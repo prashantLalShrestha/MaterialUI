@@ -71,6 +71,9 @@ open class SearchTextField: TextField {
             fullScreenDropDown.dataSource = dataSource
         }
     }
+    public var selectedIndex: Index? {
+        return fullScreenDropDown.indexForSelectedRow
+    }
     
     lazy var fullScreenDropDown: FullScreenDropDown = {
         let view = FullScreenDropDown()

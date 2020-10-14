@@ -67,6 +67,9 @@ open class DropDownTextField: TextField {
             checkDataSourceStatus()
         }
     }
+    public var selectedIndex: Index? {
+        return dropDown.indexForSelectedRow
+    }
     
     lazy var dropDown: DropDown = {
         let view = DropDown()

@@ -78,6 +78,9 @@ open class ListTextField: TextField {
             checkDataSourceStatus()
         }
     }
+    public var selectedIndex: Index? {
+        return fullScreenDropDown.indexForSelectedRow
+    }
     
     lazy var fullScreenDropDown: FullScreenDropDown = {
         let view = FullScreenDropDown()
