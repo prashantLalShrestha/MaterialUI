@@ -71,7 +71,7 @@ open class DropDownTextField: TextField {
         return dropDown.indexForSelectedRow
     }
     
-    lazy var dropDown: DropDown = {
+    public lazy var dropDown: DropDown = {
         let view = DropDown()
         view.anchorView = self
         view.dismissMode = .onTap

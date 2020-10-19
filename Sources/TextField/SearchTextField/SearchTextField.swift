@@ -75,7 +75,7 @@ open class SearchTextField: TextField {
         return fullScreenDropDown.indexForSelectedRow
     }
     
-    lazy var fullScreenDropDown: FullScreenDropDown = {
+    public lazy var fullScreenDropDown: FullScreenDropDown = {
         let view = FullScreenDropDown()
         view.layer.cornerRadius = BaseDimensions.cornerRadiusSmall
         view.layer.masksToBounds = true
