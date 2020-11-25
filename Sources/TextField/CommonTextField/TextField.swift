@@ -65,7 +65,7 @@ open class TextField: MDCTextField {
     
     var disabledView: UIView?
     
-    lazy var commonBorderView: UIView = {
+    private(set) public lazy var commonBorderView: UIView = {
         let view = UIView()
         view.isUserInteractionEnabled = false
         return view
