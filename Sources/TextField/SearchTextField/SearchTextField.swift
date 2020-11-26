@@ -72,7 +72,7 @@ open class SearchTextField: TextField {
         }
     }
     public var selectedIndex: Index? {
-        return fullScreenDropDown.indexForSelectedRow
+        return fullScreenDropDown.indexForSelectedRow ?? fullScreenDropDown.selectedRowIndices.first
     }
     
     public lazy var fullScreenDropDown: FullScreenDropDown = {

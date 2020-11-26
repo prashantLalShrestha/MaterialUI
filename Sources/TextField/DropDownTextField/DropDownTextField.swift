@@ -68,7 +68,7 @@ open class DropDownTextField: TextField {
         }
     }
     public var selectedIndex: Index? {
-        return dropDown.indexForSelectedRow
+        return dropDown.indexForSelectedRow ?? dropDown.selectedRowIndices.first
     }
     
     public lazy var dropDown: DropDown = {
