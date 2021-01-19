@@ -71,10 +71,10 @@ open class ListTextField: TextField {
             fullScreenDropDown.multiSelectionAction = multiSelectionAction
         }
     }
-    public var dataSource = [String]() {
+    public var dataSource: [String]? = nil {
         didSet {
             self.text = nil
-            fullScreenDropDown.dataSource = dataSource
+            fullScreenDropDown.dataSource = dataSource ?? []
             checkDataSourceStatus()
         }
     }
@@ -168,7 +168,7 @@ extension ListTextField {
     }
     
     func checkDataSourceStatus() {
-        trailingViewState = dataSource.isEmpty ? .processing : .default
+        trailingViewState = dataSource == nil ? .processing : .default
     }
     
     public func showFullScreenDropDown() {
@@ -183,7 +183,7 @@ extension ListTextField {
         fullScreenDropDown.selectionAction = selectionAction
         fullScreenDropDown.multiSelectionAction = multiSelectionAction
         let selectedRowIndices = fullScreenDropDown.selectedRowIndices
-        fullScreenDropDown.dataSource = dataSource
+        fullScreenDropDown.dataSource = dataSource ?? []
         fullScreenDropDown.selectedRowIndices = selectedRowIndices
         fullScreenDropDown.show()
     }

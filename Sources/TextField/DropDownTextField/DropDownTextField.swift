@@ -60,10 +60,10 @@ open class DropDownTextField: TextField {
             dropDown.multiSelectionAction = multiSelectionAction
         }
     }
-    public var dataSource = [String]() {
+    public var dataSource: [String]? = nil {
         didSet {
             self.text = nil
-            dropDown.dataSource = dataSource
+            dropDown.dataSource = dataSource ?? []
             checkDataSourceStatus()
         }
     }
@@ -121,7 +121,7 @@ extension DropDownTextField {
     }
     
     func checkDataSourceStatus() {
-        trailingViewState = dataSource.isEmpty ? .processing : .default
+        trailingViewState = dataSource == nil ? .processing : .default
     }
     
     
@@ -137,7 +137,7 @@ extension DropDownTextField {
         dropDown.selectionAction = selectionAction
         dropDown.multiSelectionAction = multiSelectionAction
         let selectedRowIndices = dropDown.selectedRowIndices
-        dropDown.dataSource = dataSource
+        dropDown.dataSource = dataSource ?? []
         dropDown.selectedRowIndices = selectedRowIndices
         dropDown.show()
     }
