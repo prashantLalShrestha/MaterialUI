@@ -373,7 +373,7 @@ private extension FullScreenDropDown {
         
         self.searchAction = { searchText in
             self.filteredDataSource = self.dataSource.filter({
-                self.searchCondition(searchText, $0) || searchText == ""
+                self.searchCondition(searchText.lowercased(), $0.lowercased()) || searchText == ""
             })
             
             self.selectRows(at: self.selectedRowIndices)
