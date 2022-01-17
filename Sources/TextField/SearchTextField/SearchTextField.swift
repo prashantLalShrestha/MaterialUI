@@ -174,7 +174,26 @@ extension SearchTextField {
         rightViewImageView.tintColor = textColor
         
         self.setTrailingView(rightViewImageView)
-
+        self.setTextFieldViewTapAction({ textField in
+            self.showDropDown()
+        })
+    }
+    
+    public func showDropDown() {
+        if trailingViewState == .success {
+            trailingViewState = .default
+        }
+        UIApplication.shared.keyWindow?.endEditing(true)
+        
+        fullScreenDropDown.cellNib = cellNib
+        fullScreenDropDown.cellHeight = cellHeight
+        fullScreenDropDown.customCellConfiguration = customCellConfiguration
+        fullScreenDropDown.selectionAction = selectionAction
+        fullScreenDropDown.multiSelectionAction = multiSelectionAction
+        let selectedRowIndices = fullScreenDropDown.selectedRowIndices
+        fullScreenDropDown.dataSource = dataSource ?? []
+        fullScreenDropDown.selectedRowIndices = selectedRowIndices
+        fullScreenDropDown.show()
     }
 }
 
